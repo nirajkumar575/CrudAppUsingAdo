@@ -1,0 +1,137 @@
+﻿@{
+	ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container mt-5">
+	<div class="card shadow-lg border-0">
+		<div class="card-header bg-primary text-white text-center">
+			<h2><i class="bi bi-shield-lock-fill"></i> Privacy Policy</h2>
+		</div>
+		<div class="card-body">
+			<p class="text-muted text-center">
+				Your privacy is important to us. This policy explains how we handle your personal data.
+			</p>
+
+			<!-- Accordion for Sections -->
+			<div class="accordion mt-4" id="privacyAccordion">
+				<!-- Data Collection -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+							<i class="bi bi-database-fill me-2"></i> What Data We Collect
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#privacyAccordion">
+						<div class="accordion-body">
+							We collect the following information:
+							<ul>
+								<li><i class="bi bi-person-fill"></i> Name & Contact Details</li>
+								<li><i class="bi bi-envelope"></i> Email Address</li>
+								<li><i class="bi bi-geo-alt"></i> Location Information</li>
+								<li><i class="bi bi-browser-chrome"></i> Browsing & Usage Data</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Data Usage -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+							<i class="bi bi-gear-fill me-2"></i> How We Use Your Data
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+						<div class="accordion-body">
+							Your data is used to:
+							<ul>
+								<li><i class="bi bi-check-circle"></i> Provide and improve our services</li>
+								<li><i class="bi bi-lock-fill"></i> Ensure security and fraud prevention</li>
+								<li><i class="bi bi-bell"></i> Send important updates and notifications</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Data Security -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+							<i class="bi bi-shield-check me-2"></i> How We Protect Your Data
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+						<div class="accordion-body">
+							We take the following measures to secure your data:
+							<ul>
+								<li><i class="bi bi-key-fill"></i> End-to-end encryption</li>
+								<li><i class="bi bi-shield-lock"></i> Secure server storage</li>
+								<li><i class="bi bi-person-lock"></i> Restricted data access</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- User Rights -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+							<i class="bi bi-clipboard-check me-2"></i> Your Rights
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
+						<div class="accordion-body">
+							As a user, you have the right to:
+							<ul>
+								<li><i class="bi bi-eye-fill"></i> Access your personal data</li>
+								<li><i class="bi bi-pencil-fill"></i> Request data correction</li>
+								<li><i class="bi bi-trash-fill"></i> Request data deletion</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Back Button -->
+			<div class="text-center mt-4">
+				<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+					<i class="bi bi-arrow-left"></i> Back to Home
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.card {
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
+	.card-header {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.accordion-button {
+		font-weight: bold;
+	}
+
+	.accordion-body ul {
+		padding-left: 20px;
+	}
+
+	.accordion-body li {
+		list-style: none;
+		margin-bottom: 5px;
+	}
+
+		.accordion-body li i {
+			color: #007bff;
+			margin-right: 5px;
+		}
+
+	.btn i {
+		margin-right: 5px;
+	}
+</style>

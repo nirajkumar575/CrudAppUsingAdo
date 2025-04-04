@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Side Navigation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* Sidebar Styling */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 20px;
+            transition: all 0.3s;
+        }
+
+            .sidebar a {
+                padding: 12px 20px;
+                font-size: 1.1rem;
+                color: #ffffff;
+                display: block;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                }
+
+            .sidebar .active {
+                background-color: #007bff;
+                font-weight: bold;
+            }
+
+            .sidebar .sidebar-header {
+                color: white;
+                font-size: 1.3rem;
+                text-align: center;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #6c757d;
+            }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            top: 15px;
+            left: 260px;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .toggle-btn:hover {
+                color: #0056b3;
+            }
+        /* Collapsed Sidebar */
+        .collapsed .sidebar {
+            width: 70px;
+        }
+
+        .collapsed .content {
+            margin-left: 70px;
+        }
+
+        .collapsed .toggle-btn {
+            left: 80px;
+        }
+
+        .collapsed .sidebar a span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <i class="bi bi-grid-fill"></i> Menu
+        </div>
+        <a href="@Url.Action("Index", "Dashboard")" class="active"><i class="bi bi-house-door"></i> <span>Home</span></a>
+        <a href="#"><i class="bi bi-person"></i> <span>Profile</span></a>
+        <a href="#"><i class="bi bi-gear"></i> <span>Settings</span></a>
+        <a href=""><i class="bi bi-box-arrow-right"></i> <span>Logout</span></a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button class="toggle-btn" onclick="toggleSidebar()"><i class="bi bi-list"></i></button>
+        <h2 style="color:deeppink">Welcome to Dashboard</h2>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle("collapsed");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
