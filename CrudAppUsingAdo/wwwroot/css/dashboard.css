@@ -1,0 +1,113 @@
+﻿/*----------Create----------*/
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/*----------Delete----------*/
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-secondary {
+    font-weight: bold;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+/*----------Details----------*/
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-secondary {
+    font-weight: bold;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn-warning:hover {
+    background-color: #d39e00;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+/*----------Edit----------*/
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+.btn i {
+    margin-right: 5px;
+}
+/*----------Index----------*/
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-sm i {
+    font-size: 1.1rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
